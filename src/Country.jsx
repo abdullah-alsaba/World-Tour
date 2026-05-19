@@ -1,8 +1,13 @@
 
 
 const Country = ({ country }) => {
-    
-  return <div></div>;
+    const { message } = country;
+
+    return <div>
+        <p>
+           Message: {message}; 
+      </p>
+  </div>;
 };
 
 export default Country;
