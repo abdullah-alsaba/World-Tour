@@ -1,6 +1,6 @@
 
 
-const Navbar = () => {
+const Navbar = ({search,setSearch}) => {
     return (
       <div>
         <div className="navbar bg-base-100 shadow-sm">
@@ -10,8 +10,9 @@ const Navbar = () => {
           <div className="flex gap-2">
             <input
               type="text"
-              placeholder="Search"
-              className="input input-bordered w-24 md:w-auto"
+              placeholder="Search Country..."
+                        className="input input-bordered w-24 md:w-auto"
+                        onChange={(e)=>setSearch(e.target.value)}
             />
           </div>
         </div>

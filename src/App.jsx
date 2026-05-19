@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import Countries from "./Countries";
 import Loading from "./Loading";
 import "./index.css";
@@ -12,14 +12,16 @@ const fetchCountries = async () => {
 
 
 
+
 function App() {
 const countriesPromise=fetchCountries()
-
+const [search, setSearch] = useState("");
   return (
     <>
-      <Navbar/>
+      <Navbar search={ search} setSearch={setSearch} />
       <Suspense fallback={<Loading/>}>
-        <Countries countriesPromise={countriesPromise} />
+        <Countries countriesPromise={countriesPromise}
+          search={ search} />
       </Suspense>
     </>
   );

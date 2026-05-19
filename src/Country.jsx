@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-
 const Country = ({ country, handelVisitedCountries }) => {
   const [visited, setVisited] = useState(false);
 
   const handelVisited = () => {
-      setVisited(!visited);
-      handelVisitedCountries(country)
+    setVisited(!visited);
+    handelVisitedCountries(country);
   };
+
 
   return (
     <div
