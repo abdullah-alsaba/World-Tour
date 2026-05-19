@@ -1,6 +1,6 @@
 
 
-const Navbar = ({search,setSearch}) => {
+const Navbar = ({setSearch}) => {
     return (
       <div>
         <div className="navbar bg-base-100 shadow-sm">
