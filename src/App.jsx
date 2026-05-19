@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import Countries from "./Countries";
 import Loading from "./Loading";
 import "./index.css";
+import Navbar from "./Navbar";
 
 
 const fetchCountries = async () => {
@@ -16,6 +17,7 @@ const countriesPromise=fetchCountries()
 
   return (
     <>
+      <Navbar/>
       <Suspense fallback={<Loading/>}>
         <Countries countriesPromise={countriesPromise} />
       </Suspense>
