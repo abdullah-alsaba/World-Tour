@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "planName": "Basic Plan",
+    "price": 9,
+    "duration": "month",
+    "description": "Perfect for small food startups or personal food blogs.",
+    "features": [
+      "5 Menu Items",
+      "Basic Website Design",
+      "Mobile Responsive",
+      "Online Contact Form",
+      "Email Support",
+      "1 Admin Account"
+    ],
+    "popular": false
+  },
+  {
+    "id": 2,
+    "planName": "Premium Plan",
+    "price": 29,
+    "duration": "month",
+    "description": "Best for growing restaurants and cafes.",
+    "features": [
+      "Unlimited Menu Items",
+      "Online Food Ordering",
+      "Table Reservation System",
+      "Payment Integration",
+      "Customer Reviews",
+      "Priority Support",
+      "5 Admin Accounts"
+    ],
+    "popular": true
+  },
+  {
+    "id": 3,
+    "planName": "Ultimate Plan",
+    "price": 59,
+    "duration": "month",
+    "description": "Ideal for large restaurants and food delivery businesses.",
+    "features": [
+      "Everything in Premium",
+      "Real-time Order Tracking",
+      "Multi-Branch Management",
+      "Advanced Analytics Dashboard",
+      "Custom Branding",
+      "Marketing & Discount Tools",
+      "24/7 Premium Support",
+      "Unlimited Admin Accounts"
+    ],
+    "popular": false
+  }
+]

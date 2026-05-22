@@ -3,6 +3,8 @@ import Countries from "./Countries";
 import Loading from "./Loading";
 import "./index.css";
 import Navbar from "./Navbar";
+import Pricings from "./Components/Pricings";
+import PricingData from "./Data/PricingData.json"
 
 
 const fetchCountries = async () => {
@@ -13,16 +15,23 @@ const fetchCountries = async () => {
 
 
 
+
+
 function App() {
 const countriesPromise=fetchCountries()
 const [search, setSearch] = useState("");
   return (
     <>
-      <Navbar search={ search} setSearch={setSearch} />
+      <Suspense fallback={<Loading></Loading>}>
+        <Pricings PricingData={PricingData}></Pricings>
+      </Suspense>
+
+
+      {/* <Navbar search={ search} setSearch={setSearch} />
       <Suspense fallback={<Loading/>}>
         <Countries countriesPromise={countriesPromise}
           search={ search} />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }
